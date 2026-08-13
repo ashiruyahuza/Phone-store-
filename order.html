@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Place Order | ASHIR PHONE STORE</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+
+            <img
+                src="images/logo.jpg"
+                alt="ASHIR PHONE STORE"
+            >
+
+            <div class="logo-text">
+
+                <strong>ASHIR</strong>
+
+                <span>PHONE STORE</span>
+
+            </div>
+
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="phones.html">
+                Phones
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <button
+            class="menu-button"
+            id="menuButton"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- MOBILE MENU -->
+
+<div
+    class="mobile-menu"
+    id="mobileMenu"
+>
+
+    <a href="index.html">Home</a>
+
+    <a href="phones.html">Phones</a>
+
+    <a href="about.html">About Us</a>
+
+    <a href="contact.html">Contact</a>
+
+</div>
+
+
+
+<!-- ORDER PAGE -->
+
+<main>
+
+<section class="order-section">
+
+    <div class="section-container">
+
+
+        <div class="order-header">
+
+            <span class="section-label">
+                ASHIR PHONE STORE
+            </span>
+
+            <h1>
+                Place your
+                <span>order.</span>
+            </h1>
+
+            <p>
+                Fill in your details below and we'll
+                contact you to confirm your order.
+            </p>
+
+        </div>
+
+
+
+        <div class="order-layout">
+
+
+            <!-- FORM -->
+
+            <div class="order-card">
+
+                <form id="orderForm">
+
+
+                    <div class="form-section-title">
+
+                        <span>01</span>
+
+                        <div>
+
+                            <strong>
+                                Customer Information
+                            </strong>
+
+                            <small>
+                                Tell us how to contact you
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+
+                        <label for="customerName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="customerName"
+                            name="customerName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-row">
+
+
+                        <!-- PHONE -->
+
+                        <div class="form-group">
+
+                            <label for="customerPhone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="customerPhone"
+                                name="customerPhone"
+                                placeholder="08012345678"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+
+                        <div class="form-group">
+
+                            <label for="customerEmail">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="customerEmail"
+                                name="customerEmail"
+                                placeholder="you@example.com"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PRODUCT -->
+
+                    <div class="form-section-title">
+
+                        <span>02</span>
+
+                        <div>
+
+                            <strong>
+                                Phone Details
+                            </strong>
+
+                            <small>
+                                Select what you want to order
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="phoneSelect">
+                            Select Phone
+                        </label>
+
+                        <select
+                            id="phoneSelect"
+                            name="phone"
+                            required
+                        >
+
+                            <option value="">
+                                Choose a phone
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="form-row">
+
+
+                        <div class="form-group">
+
+                            <label for="storage">
+                                Storage
+                            </label>
+
+                            <select
+                                id="storage"
+                                name="storage"
+                            >
+
+                                <option value="">
+                                    Select storage
+                                </option>
+
+                                <option value="64GB">
+                                    64GB
+                                </option>
+
+                                <option value="128GB">
+                                    128GB
+                                </option>
+
+                                <option value="256GB">
+                                    256GB
+                                </option>
+
+                                <option value="512GB">
+                                    512GB
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="quantity">
+                                Quantity
+                            </label>
+
+                            <input
+                                type="number"
+                                id="quantity"
+                                name="quantity"
+                                value="1"
+                                min="1"
+                                max="10"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- DELIVERY -->
+
+                    <div class="form-section-title">
+
+                        <span>03</span>
+
+                        <div>
+
+                            <strong>
+                                Delivery / Pickup
+                            </strong>
+
+                            <small>
+                                How would you like to receive it?
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="delivery-options">
+
+
+                        <label class="delivery-option">
+
+                            <input
+                                type="radio"
+                                name="delivery"
+                                value="pickup"
+                                checked
+                            >
+
+                            <div>
+
+                                <strong>
+                                    Store Pickup
+                                </strong>
+
+                                <small>
+                                    New Market, Shop No. 24
+                                </small>
+
+                            </div>
+
+                        </label>
+
+
+
+                        <label class="delivery-option">
+
+                            <input
+                                type="radio"
+                                name="delivery"
+                                value="delivery"
+                            >
+
+                            <div>
+
+                                <strong>
+                                    Delivery
+                                </strong>
+
+                                <small>
+                                    We'll discuss delivery details
+                                </small>
+
+                            </div>
+
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- ADDRESS -->
+
+                    <div
+                        class="form-group"
+                        id="addressGroup"
+                    >
+
+                        <label for="address">
+                            Delivery Address
+                        </label>
+
+                        <textarea
+                            id="address"
+                            name="address"
+                            rows="4"
+                            placeholder="Enter your delivery address"
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <!-- MESSAGE -->
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Additional Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            placeholder="Anything else we should know?"
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        class="order-submit"
+                    >
+
+                        Send Order via WhatsApp →
+
+                    </button>
+
+
+                    <p class="form-note">
+
+                        Your order will be sent to ASHIR PHONE STORE
+                        through WhatsApp for confirmation.
+
+                    </p>
+
+
+                </form>
+
+            </div>
+
+
+
+            <!-- ORDER SUMMARY -->
+
+            <aside class="order-summary">
+
+                <div class="summary-card">
+
+                    <span class="section-label">
+                        YOUR ORDER
+                    </span>
+
+                    <h2>
+                        Order Summary
+                    </h2>
+
+
+                    <div
+                        id="orderSummary"
+                        class="summary-content"
+                    >
+
+                        <div class="summary-empty">
+
+                            📱
+
+                            <p>
+                                Select a phone to see
+                                your order summary.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="store-mini-info">
+
+                        <strong>
+                            ASHIR PHONE STORE
+                        </strong>
+
+                        <span>
+                            📍 New Market, Shop No. 24
+                        </span>
+
+                        <span>
+                            Jos, Plateau State
+                        </span>
+
+                        <span>
+                            📞 08109240024
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="section-container">
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 ASHIR PHONE STORE.
+            </p>
+
+            <p>
+                MD & CEO:
+                <strong>
+                    ASHIRU YAHUZA MUHAMMAD
+                </strong>
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<script src="js/products.js"></script>
+<script src="js/order.js"></script>
+
+</body>
+
+</html>

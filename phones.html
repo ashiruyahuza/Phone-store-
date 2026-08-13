@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Browse smartphones available at ASHIR PHONE STORE, Jos, Plateau State."
+    >
+
+    <title>Phones | ASHIR PHONE STORE</title>
+
+    <!-- GOOGLE FONT -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- MAIN CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+====================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+
+        <!-- LOGO -->
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            <img
+                src="images/logo.jpg"
+                alt="ASHIR PHONE STORE"
+            >
+
+            <div class="logo-text">
+
+                <strong>
+                    ASHIR
+                </strong>
+
+                <span>
+                    PHONE STORE
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a
+                href="phones.html"
+                class="active"
+            >
+                Phones
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <a
+            href="order.html"
+            class="nav-order-button"
+        >
+            Order Now
+        </a>
+
+
+        <!-- MOBILE BUTTON -->
+
+        <button
+            class="menu-button"
+            id="menuButton"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- MOBILE MENU -->
+
+<div
+    class="mobile-menu"
+    id="mobileMenu"
+>
+
+    <a href="index.html">
+        Home
+    </a>
+
+    <a href="phones.html">
+        Phones
+    </a>
+
+    <a href="about.html">
+        About Us
+    </a>
+
+    <a href="contact.html">
+        Contact
+    </a>
+
+    <a
+        href="order.html"
+        class="mobile-order"
+    >
+        Order Now
+    </a>
+
+</div>
+
+
+
+<!-- =====================================================
+     MAIN
+====================================================== -->
+
+<main>
+
+
+<!-- =====================================================
+     PAGE HERO
+====================================================== -->
+
+<section class="shop-hero">
+
+    <div class="section-container">
+
+        <span class="section-label">
+            ASHIR PHONE STORE
+        </span>
+
+        <h1>
+            Find your
+            <span>next phone.</span>
+        </h1>
+
+        <p>
+            Browse our collection of smartphones from
+            popular brands. Choose your phone and
+            place an order directly with us.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PHONE SHOP
+====================================================== -->
+
+<section class="shop-section">
+
+    <div class="section-container">
+
+
+        <!-- SEARCH -->
+
+        <div class="shop-toolbar">
+
+            <div class="search-box">
+
+                <span>
+                    🔎
+                </span>
+
+                <input
+                    type="text"
+                    id="phoneSearch"
+                    placeholder="Search phones..."
+                >
+
+            </div>
+
+
+            <!-- SORT -->
+
+            <select id="sortPhones">
+
+                <option value="default">
+                    Sort by
+                </option>
+
+                <option value="low">
+                    Price: Low to High
+                </option>
+
+                <option value="high">
+                    Price: High to Low
+                </option>
+
+                <option value="name">
+                    Name
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <!-- BRAND FILTER -->
+
+        <div class="brand-filters">
+
+            <button
+                class="brand-filter active"
+                data-brand="all"
+            >
+                All
+            </button>
+
+            <button
+                class="brand-filter"
+                data-brand="Apple"
+            >
+                Apple
+            </button>
+
+            <button
+                class="brand-filter"
+                data-brand="Samsung"
+            >
+                Samsung
+            </button>
+
+            <button
+                class="brand-filter"
+                data-brand="Tecno"
+            >
+                Tecno
+            </button>
+
+            <button
+                class="brand-filter"
+                data-brand="Infinix"
+            >
+                Infinix
+            </button>
+
+            <button
+                class="brand-filter"
+                data-brand="Xiaomi"
+            >
+                Xiaomi
+            </button>
+
+        </div>
+
+
+
+        <!-- PRODUCT COUNT -->
+
+        <div class="shop-result">
+
+            <span id="phoneCount">
+                Loading phones...
+            </span>
+
+        </div>
+
+
+
+        <!-- PHONE GRID -->
+
+        <div
+            class="phone-grid"
+            id="phoneGrid"
+        >
+
+            <!-- PRODUCTS WILL BE GENERATED
+                 BY JAVASCRIPT -->
+
+        </div>
+
+
+        <!-- NO RESULTS -->
+
+        <div
+            class="no-results"
+            id="noResults"
+        >
+
+            <div>
+                📱
+            </div>
+
+            <h3>
+                No phones found
+            </h3>
+
+            <p>
+                Try another search or brand.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     STORE CTA
+====================================================== -->
+
+<section class="cta-section">
+
+    <div class="section-container">
+
+        <div class="cta-card">
+
+            <div>
+
+                <span class="section-label">
+                    CAN'T FIND YOUR PHONE?
+                </span>
+
+                <h2>
+                    Talk to
+                    <span>ASHIR.</span>
+                </h2>
+
+                <p>
+                    Contact us and tell us the phone
+                    you're looking for.
+                </p>
+
+            </div>
+
+
+            <div class="cta-buttons">
+
+                <a
+                    href="https://wa.me/2348109240024"
+                    class="primary-button"
+                    target="_blank"
+                >
+                    WhatsApp Us →
+                </a>
+
+                <a
+                    href="contact.html"
+                    class="secondary-button"
+                >
+                    Contact Store
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <div class="section-container">
+
+        <div class="footer-grid">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+
+                    <img
+                        src="images/logo.jpg"
+                        alt="ASHIR PHONE STORE"
+                    >
+
+                    <div class="logo-text">
+
+                        <strong>
+                            ASHIR
+                        </strong>
+
+                        <span>
+                            PHONE STORE
+                        </span>
+
+                    </div>
+
+                </a>
+
+                <p>
+                    Premium smartphones.
+                    Trusted service.
+                </p>
+
+            </div>
+
+
+            <!-- LINKS -->
+
+            <div class="footer-column">
+
+                <h4>
+                    QUICK LINKS
+                </h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="phones.html">
+                    Phones
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- LOCATION -->
+
+            <div class="footer-column">
+
+                <h4>
+                    OUR STORE
+                </h4>
+
+                <span>
+                    📍 New Market
+                </span>
+
+                <span>
+                    Shop No. 24
+                </span>
+
+                <span>
+                    Jos, Plateau State
+                </span>
+
+                <span>
+                    Nigeria
+                </span>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column">
+
+                <h4>
+                    CONTACT
+                </h4>
+
+                <a href="tel:+2348109240024">
+                    08109240024
+                </a>
+
+                <a href="mailto:ashiruyahuza024@gmail.com">
+                    ashiruyahuza024@gmail.com
+                </a>
+
+                <a
+                    href="https://wa.me/2348109240024"
+                    target="_blank"
+                >
+                    WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 ASHIR PHONE STORE.
+                All rights reserved.
+            </p>
+
+            <p>
+                MD & CEO:
+                <strong>
+                    ASHIRU YAHUZA MUHAMMAD
+                </strong>
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- WHATSAPP -->
+
+<a
+    href="https://wa.me/2348109240024"
+    class="whatsapp-button"
+    target="_blank"
+>
+
+    <span>
+        WhatsApp
+    </span>
+
+    <strong>
+        ☏
+    </strong>
+
+</a>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/products.js"></script>
+
+<script src="js/app.js"></script>
+
+
+</body>
+</html>
